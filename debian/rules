@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+PACKAGE = $(shell dh_listpackages)
+TMP     = $(CURDIR)/debian/$(PACKAGE)
+
+%:
+	dh $@
+
+override_dh_installexamples:
+	dh_installexamples
+	# move to lowercase
+	mv $(TMP)/usr/share/doc/node-readable-stream/examples/CAPSLOCKTYPER.JS \
+	   $(TMP)/usr/share/doc/node-readable-stream/examples/capslocktyper.js
+	# patch example
+	find $(TMP)/usr/share/doc/node-readable-stream/examples/ -name '*.js' -exec \
+		sed -i "s,require\s*[(]\s*'[.][.][/],require('readable-stream/,g" {} \;
+
+override_dh_install:
+	dh_install
+	find $(TMP) -name .gitignore -delete

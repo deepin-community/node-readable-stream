@@ -1,0 +1,2 @@
+export NODE_PATH=debian/tests/test_modules
+tap -J test/parallel/*.js test/ours/*.js

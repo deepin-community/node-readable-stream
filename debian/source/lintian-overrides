@@ -1,0 +1,68 @@
+# False positive
+source-is-missing build/build.js line.*
+source-is-missing lib/internal/streams/buffer_list.js line.*
+source-is-missing lib/internal/streams/from.js line.*
+source-contains-prebuilt-javascript-object build/build.js line.*
+source-contains-prebuilt-javascript-object lib/internal/streams/buffer_list.js line.*
+source-contains-prebuilt-javascript-object lib/internal/streams/from.js line.*
+very-long-line-length-in-source-file lib/internal/streams/buffer_list.js line.*
+very-long-line-length-in-source-file lib/internal/streams/from.js line.*
+
+# Test data
+node-readable-stream source: source-is-missing test/common/countdown.js *
+node-readable-stream source: source-is-missing test/common/dns.js *
+node-readable-stream source: source-is-missing test/common/duplexpair.js *
+node-readable-stream source: source-is-missing test/common/heap.js *
+node-readable-stream source: source-is-missing test/common/http2.js *
+node-readable-stream source: source-is-missing test/common/inspector-helper.js *
+node-readable-stream source: source-is-missing test/common/tls.js *
+node-readable-stream source: source-is-missing test/parallel/test-readable-from.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-big-packet.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-events-prepend.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-finished.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-pipe-after-end.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-pipeline.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-push-strings.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-readable-async-iterators.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-unpipe-event.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-writable-change-default-encoding.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-writable-decoded-encoding.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream-writable-null.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-basic.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-compatibility.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-pipe-error-once-listener.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-set-encoding.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-unpipe-drain.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-unpipe-leak.js *
+node-readable-stream source: source-is-missing test/parallel/test-stream2-writable.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/countdown.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/dns.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/duplexpair.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/heap.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/http2.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/inspector-helper.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/common/tls.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-readable-from.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-big-packet.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-events-prepend.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-finished.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-pipe-after-end.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-pipeline.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-push-strings.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-readable-async-iterators.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-unpipe-event.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-writable-change-default-encoding.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-writable-decoded-encoding.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream-writable-null.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-basic.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-compatibility.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-pipe-error-once-listener.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-set-encoding.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-unpipe-drain.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-unpipe-leak.js *
+node-readable-stream source: source-contains-prebuilt-javascript-object test/parallel/test-stream2-writable.js *
+node-readable-stream source: very-long-line-length-in-source-file test/common/dns.js *
+node-readable-stream source: very-long-line-length-in-source-file test/parallel/test-readable-from.js *
+
+
+

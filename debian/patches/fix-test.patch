@@ -1,0 +1,311 @@
+Description: fix test
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-01-21
+
+--- a/test/common/arraystream.js
++++ b/test/common/arraystream.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -58,4 +57,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/benchmark.js
++++ b/test/common/benchmark.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -75,4 +74,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/countdown.js
++++ b/test/common/countdown.js
+@@ -7,7 +7,6 @@
+ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -77,4 +76,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/dns.js
++++ b/test/common/dns.js
+@@ -9,7 +9,6 @@
+ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -433,4 +432,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/duplexpair.js
++++ b/test/common/duplexpair.js
+@@ -17,7 +17,6 @@
+ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -115,4 +114,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/fixtures.js
++++ b/test/common/fixtures.js
+@@ -9,7 +9,6 @@
+ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -71,4 +70,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/heap.js
++++ b/test/common/heap.js
+@@ -7,7 +7,6 @@
+ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -298,4 +297,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/hijackstdio.js
++++ b/test/common/hijackstdio.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -70,4 +69,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/http2.js
++++ b/test/common/http2.js
+@@ -17,7 +17,6 @@
+ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -256,4 +255,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/index.js
++++ b/test/common/index.js
+@@ -13,7 +13,6 @@
+ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -947,4 +946,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/inspector-helper.js
++++ b/test/common/inspector-helper.js
+@@ -21,7 +21,6 @@
+ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -786,4 +785,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/internet.js
++++ b/test/common/internet.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -104,4 +103,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/ongc.js
++++ b/test/common/ongc.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -63,4 +62,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/shared-lib-util.js
++++ b/test/common/shared-lib-util.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -77,4 +76,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/tick.js
++++ b/test/common/tick.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -45,4 +44,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/tls.js
++++ b/test/common/tls.js
+@@ -17,7 +17,6 @@
+ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -241,4 +240,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/tmpdir.js
++++ b/test/common/tmpdir.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -98,4 +97,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}
+--- a/test/common/wpt.js
++++ b/test/common/wpt.js
+@@ -1,7 +1,6 @@
+ "use strict";
+ 
+ /*<replacement>*/
+-require('@babel/polyfill');
+ 
+ var util = require('util');
+ 
+@@ -63,4 +62,4 @@
+   for (var i = 0, l = xs.length; i < l; i++) {
+     f(xs[i], i);
+   }
+-}
+\ No newline at end of file
++}

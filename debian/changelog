@@ -1,0 +1,136 @@
+node-readable-stream (3.6.0+~cs3.0.0-1) unstable; urgency=medium
+
+  * Bundle bufferstreams
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 12 Oct 2021 17:56:22 +0000
+
+node-readable-stream (3.6.0-5) unstable; urgency=medium
+
+  * Bump standard version
+  * Drop depends on nodejs
+  * MA: foreign
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 29 Sep 2021 20:34:17 +0000
+
+node-readable-stream (3.6.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-lolex,
+      node-process-nextick-args and node-tap.
+    + node-readable-stream: Drop versioned constraint on
+      node-process-nextick-args in Depends.
+
+  [ Bastien Roucariès ]
+  * Bump standard version (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 01 Sep 2021 19:17:56 +0000
+
+node-readable-stream (3.6.0-3) unstable; urgency=medium
+
+  * Rewrite watch file for better tracking of github version
+  * Be lintian clean
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 29 Aug 2021 20:28:30 +0000
+
+node-readable-stream (3.6.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix test (Closes: #980690)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 21 Jan 2021 06:31:52 +0100
+
+node-readable-stream (3.6.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update renamed lintian tag names in lintian overrides.
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * New upstream version 3.6.0
+  * Clean test_modules
+  * Add build dependencies to node-babel7, node-debbundle-es-to-primitive,
+    node-es-abstract
+  * Parallelize tests
+  * Update lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 26 Dec 2020 08:41:28 +0100
+
+node-readable-stream (3.4.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Indicate that this version breaks node-libs-browser < 2.2.1-3
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 11 Jan 2020 09:32:23 +0100
+
+node-readable-stream (3.4.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Drop unneeded version constraints from (build) dependencies
+  * Add "Rules-Requires-Root: no"
+  * New upstream version 3.4.0
+  * Switch test and install to pkg-js-tools, this embeds some modules for test
+    only
+  * Update debian/rules
+  * Update copyright
+  * Update lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 25 Nov 2019 23:07:04 +0100
+
+node-readable-stream (2.3.6-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump policy (no changes)
+  * Fix test suite.
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 07 May 2018 16:55:05 +0200
+
+node-readable-stream (2.3.5-2) unstable; urgency=medium
+
+  * Fix buildd error.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 17 Mar 2018 21:56:50 +0100
+
+node-readable-stream (2.3.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix bug due to API change in depends (Closes: #893117).
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 12 Mar 2018 10:42:56 +0100
+
+node-readable-stream (2.3.4-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+  * Bump compat and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 22 Feb 2018 14:45:41 +0100
+
+node-readable-stream (2.3.3-1) unstable; urgency=medium
+
+  * New upstream version
+  * Bump policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 13 Aug 2017 16:24:33 +0200
+
+node-readable-stream (2.2.11-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 12 Jun 2017 23:01:45 +0200
+
+node-readable-stream (2.2.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #863510).
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 27 May 2017 23:15:41 +0200
