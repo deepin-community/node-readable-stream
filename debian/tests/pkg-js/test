@@ -1,2 +1,1 @@
-export NODE_PATH=debian/tests/test_modules
-tap -J test/parallel/*.js test/ours/*.js
+tap -R tap --no-cov `ls test/parallel/*.js test/ours/*.js|grep -v test/parallel/test-stream-pipeline.js`

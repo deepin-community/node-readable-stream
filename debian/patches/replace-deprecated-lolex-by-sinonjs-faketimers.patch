@@ -1,0 +1,16 @@
+Description: replace deprecated lolex by @sinonjs/fake-timers
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2022-05-03
+
+--- a/test/ours/lolex-fake-timers.js
++++ b/test/ours/lolex-fake-timers.js
+@@ -2,7 +2,7 @@
+ var tap = require('tap');
+ var util = require('util');
+ var assert = require('assert');
+-var lolex = require('lolex');
++var lolex = require('@sinonjs/fake-timers');
+ var stream = require('../../');
+ var Transform = stream.Transform;
+ 
