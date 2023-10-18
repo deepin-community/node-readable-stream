@@ -5,6 +5,6 @@ filenamemangle=s%(?:.*?/)?v?@ANY_VERSION@(@ARCHIVE_EXT@)%@PACKAGE@-$1$2% \
  https://github.com/nodejs/readable-stream/tags (?:.*?/)?v?@ANY_VERSION@@ARCHIVE_EXT@ group
 
 opts=\
-dversionmangle=auto,component=bufferstreams,\
+dversionmangle=auto,ctype=nodejs,component=bufferstreams,\
 filenamemangle=s%(?:.*?/)?v?@ANY_VERSION@(@ARCHIVE_EXT@)%bufferstreams-$1$2% \
  https://github.com/nfroidure/BufferStreams/tags (?:.*?/)?v?@ANY_VERSION@@ARCHIVE_EXT@ checksum

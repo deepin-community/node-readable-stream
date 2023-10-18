@@ -1,0 +1,15 @@
+Description: drop __proto__ calls
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-10-03
+
+--- a/errors-browser.js
++++ b/errors-browser.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
++function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; Object.setPrototypeOf(subClass, superClass); }
+ 
+ var codes = {};
+ 

@@ -17,11 +17,11 @@ Build-Depends:
  , node-es-abstract <!nocheck>
  , node-inherits <!nocheck>
  , node-isarray <!nocheck>
- , node-lolex <!nocheck>
  , node-ms <!nocheck>
  , node-process-nextick-args <!nocheck>
  , node-regenerator-runtime <!nocheck>
  , node-safe-buffer <!nocheck>
+ , node-sinon <!nocheck>
  , node-string-decoder <!nocheck>
  , node-tap <!nocheck>
  , node-tape <!nocheck>
